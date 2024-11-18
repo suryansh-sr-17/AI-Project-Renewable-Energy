@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wind Energy Prediction</title>
+
+  <!-- Materialize CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Wind Energy Prediction</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+      </ul>
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Home</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="header center orange-text">Wind Energy Prediction</h1>
+    <div class="row center">
+      <h5 class="header col s12 light">Predict wind energy generation based on weather parameters</h5>
+    </div>
+
+    <div class="row">
+      <form action="/predict" method="post" class="col s12">
+        <div class="row">
+          <div class="input-field col s4">
+            <label for="v1"><b>Wind Speed (10m) : </b></label>
+            <input placeholder="Wind Speed at the height of 10m (m/s)" name="v1" id="v1" type="number" class="validate" required>
+          </div>
+          <div class="input-field col s4">
+            <label for="v2"><b>Wind Speed (20m) : </b></label>
+            <input placeholder="Wind Speed at the height of 20m (m/s)" name="v2" id="v2" type="number" class="validate" required>
+          </div>
+          <div class="input-field col s4">
+            <label for="v_50m"><b>Wind Speed (50m) : </b></label>
+            <input placeholder="Wind Speed at the height of 50m (m/s)" name="v_50m" id="v_50m" type="number" class="validate" required>
+          </div>
+          <div class="input-field col s4">
+            <label for="z0"><b>Roughness Length : </b></label>
+            <input placeholder="Texture or Roughness of the Surface (m)" name="z0" id="z0" type="number" step="0.0001" class="validate" required>
+          </div>
+
+        </div>
+
+        <h1>Typical Values of z₀ (Roughness Length)</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Surface Type</th>
+                <th>z₀ (m)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Smooth water surface</td>
+                <td>0.0002</td>
+            </tr>
+            <tr>
+                <td>Grassland</td>
+                <td>0.03</td>
+            </tr>
+            <tr>
+                <td>Forest or urban terrain</td>
+                <td>1.0</td>
+            </tr>
+            <tr>
+                <td>Sand dunes</td>
+                <td>0.1</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <br><div class="row center"><br>
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Wind Energy Generation</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="row center">
+      <h5 class="header col s12 orange-text">{{ prediction_text }}</h5>
+    </div>
+  </div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">About the Project</h5>
+          <p class="grey-text text-lighten-4">This project predicts wind energy generation using weather parameters.</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Our GitHub Repository 💓</a></li>
+            
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Contact Us</a></li>
+            <li><a class="white-text" href="#!">Support</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="./static/js/materialize.js"></script>
+  <script src="./static/js/init.js"></script>
+</body>
+</html>
