@@ -10,17 +10,17 @@ Welcome to AI Energy Predictor, a cutting-edge project that leverages the power 
 # 🧠✨ What’s Inside?
 This project combines:
 
-• Optimized AI Models🌅🌬️: Carefully selected models tailored for solar and wind energy predictions.   
-• Simplicity Meets Sophistication🖥️🎉: Deployment made easy using Flask, turning complex predictions into user-friendly webpages.   
-• Interactive Interface💡💭: A clean, intuitive frontend to ensure anyone can input data and retrieve accurate predictions effortlessly.  
-• In-Depth Analysis📈🔍: Separate analysis scripts included for selecting the most optimized AI models and for plotting cross-validation accuracy, providing detailed insights into model performance.   
-• Research Paper📜🖇️: A detailed and extensive research paper explaining each stage of our project's development.  
+• **Optimized AI Models**🌅🌬️: Carefully selected models tailored for solar and wind energy predictions.   
+• **Simplicity Meets Sophistication**🖥️🎉: Deployment made easy using Flask, turning complex predictions into user-friendly webpages.   
+• **Interactive Interface**💡💭: A clean, intuitive frontend to ensure anyone can input data and retrieve accurate predictions effortlessly.  
+• **In-Depth Analysis**📈🔍: Separate analysis scripts included for selecting the most optimized AI models and for plotting cross-validation accuracy, providing detailed insights into model performance.   
+• **Research Paper**📜🖇️: A detailed and extensive research paper explaining each stage of our project's development.  
 
 # 🚀 Future Developments
 Here’s what’s on the horizon for this project:  
 
-• Unified Web Portal 🌐✨: Seamlessly combine solar and wind predictions into one main platform.   
-• Live Graph Updates 📊⏱️: Real-time data visualization to track trends and predictions dynamically.   
+• **Unified Web Portal** 🌐✨: Seamlessly combine solar and wind predictions into one main platform.   
+• **Live Graph Updates** 📊⏱️: Real-time data visualization to track trends and predictions dynamically.   
 
 Stay tuned for these exciting features, which are just around the corner! 🔄  
 
