@@ -46,8 +46,27 @@
             <input placeholder="Wind Speed at the height of 50m (m/s)" name="v_50m" id="v_50m" type="number" class="validate" required>
           </div>
           <div class="input-field col s4">
-            <label for="z0"><b>Roughness Length : </b></label>
-            <input placeholder="Texture or Roughness of the Surface (m)" name="z0" id="z0" type="number" step="0.0001" class="validate" required>
+            <!-- <label for="z0"><b>Roughness Length : </b></label>
+            <input placeholder="Texture or Roughness of the Surface (m)" name="z0" id="z0" type="number" step="0.0001" class="validate" required> -->
+
+            <!-- <label for="z0"><b>Roughness Length (z₀): </b></label>
+            <select name="z0" id="z0" class="browser-default" required>
+              <option value="" disabled selected> </option>
+              <option value="0.0002">Smooth water surface (z₀ = 0.0002 m)</option>
+              <option value="0.03">Grassland (z₀ = 0.03 m)</option>
+              <option value="1.0">Forest or urban terrain (z₀ = 1.0 m)</option>
+              <option value="0.1">Sand dunes (z₀ = 0.1 m)</option> -->
+
+              <label for="roughness length"><b>Roughness Length (z₀):</b></label><br><br>
+              <select name="z0" id="z0" class="browser-default" required>
+                <option value="" disabled selected>Choose a Surface Type</option>
+                <option value="0.0002">Smooth water surface (z₀ = 0.0002 m)</option>
+                <option value="0.03">Grassland (z₀ = 0.03 m)</option>
+                <option value="1.0">Forest or urban terrain (z₀ = 1.0 m)</option>
+                <option value="0.1">Sand dunes (z₀ = 0.1 m)</option>
+              </select>
+
+            </select>
           </div>
 
         </div>
@@ -101,7 +120,7 @@
         <div class="col l3 s12">
           <h5 class="white-text">Links</h5>
           <ul>
-            <li><a class="white-text" href="#!">Our GitHub Repository 💓</a></li>
+            <li><a class="white-text" href="https://github.com/suryansh-sr-17/AI-Project-Renewable-Energy">Our GitHub Repository 💓</a></li>
             
           </ul>
         </div>
