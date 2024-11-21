@@ -10,7 +10,7 @@ Welcome to AI Energy Predictor, a cutting-edge project that leverages the power 
 # 🧠✨ What’s Inside?
 This project combines:
 
-• **Optimized AI Models**🌅🌬️: Carefully selected models tailored for solar and wind energy predictions.   
+• **Optimized AI Models**🌅🌬️: Carefully selected models tailored for solar and wind energy predictions (contains both the initial and final drafts of the analysis codes).   
 • **Simplicity Meets Sophistication**🖥️🎉: Deployment made easy using Flask, turning complex predictions into user-friendly webpages.   
 • **Interactive Interface**💡💭: A clean, intuitive frontend to ensure anyone can input data and retrieve accurate predictions effortlessly.  
 • **In-Depth Analysis**📈🔍: Separate analysis scripts included for selecting the most optimized AI models and for plotting cross-validation accuracy, providing detailed insights into model performance.   
