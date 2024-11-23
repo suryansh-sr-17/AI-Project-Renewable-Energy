@@ -25,7 +25,7 @@ Here’s what’s on the horizon for this project:
 Stay tuned for these exciting features, which are just around the corner! 🔄  
 
 # 🤝 Who Made This Possible?
-This project is part of the AI Course at [Institution Name], developed under the guidance of:  
+This project is part of the AI Course at Indian Institute of Information Technology Vadodara - International Campus Diu (IIITV-ICD), developed under the guidance of:  
 
 • 🧑‍🏫 Professor: Dr. Prateek Shah  
 • 🧑‍🎓 TA/Mentor: Mr. Govind Garg  
